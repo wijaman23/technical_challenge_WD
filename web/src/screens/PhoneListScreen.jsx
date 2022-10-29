@@ -14,7 +14,8 @@ function PhoneListScreen() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container mb-2">
+      <h1 className="mb-5 mt-2">List phones</h1>
       {phones.map((phone) => (
         <div className="col" key={phone.id}>
           <PhoneItem {...phone} />
