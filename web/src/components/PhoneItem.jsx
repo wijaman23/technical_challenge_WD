@@ -9,6 +9,7 @@ import Xiaomi from "../assets/images/Xiaomi_MI_A2.jpeg";
 import Zen from "../assets/images/ZenPhone_5.jpg";
 
 function PhoneItem({
+  id,
   name,
   description,
   manufacturer,
@@ -32,9 +33,9 @@ function PhoneItem({
       return Nokia;
     } else if (imageMovil === "P10_Lite.jpg") {
       return P10;
-    }else if (imageMovil === "Xiaomi_MI_A2.jpeg") {
+    } else if (imageMovil === "Xiaomi_MI_A2.jpeg") {
       return Xiaomi;
-    }else if (imageMovil === "ZenPhone_5.jpg") {
+    } else if (imageMovil === "ZenPhone_5.jpg") {
       return Zen;
     }
   }
@@ -63,6 +64,7 @@ function PhoneItem({
             <h6 style={{ fontWeight: 200 }}>Screem : {screen}</h6>
             <h6 style={{ fontWeight: 200 }}>Processor: {processor}</h6>
             <h6 style={{ fontWeight: 200 }}>Ram: {ram}Gb</h6>
+            <button className="btn btn-primary">Detail</button>
           </div>
         </div>
       </div>
